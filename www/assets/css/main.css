@@ -1,20 +1,9 @@
-.container{
+.info-grid{
   display: flex;
   flex: 1 1 auto;
 }
-[class^=bar-]{
-  width: 300px;
-  margin: 5px;
+.info-box{
+  margin: 10px;
   padding: 5px;
-  color: white;
-  text-align: center;
-}
-.bar-1{
-  background-color: blue;
-}
-.bar-2 {
-  background-color: red;
-}
-.bar-3 {
-  background-color: green;
+  border: solid #999 3px;
 }

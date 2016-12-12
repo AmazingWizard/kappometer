@@ -3,35 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Testing TMI</title>
-    <script src="//d2g2wobxbkulb1.cloudfront.net/0.0.23/tmi.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://cdn.tmijs.org/js/latest/1.x/tmi.min.js"></script>
+    <script src="assets/js/canvasjs.min.js"></script>
     <script src="assets/js/chat_bot.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="/assets/css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <h1>Message Count</h1>
-    <p id="message_count">
+    <div id="Chart" style="height: 300px; width: 100%; display:block;"></div>
+    <div class="info-grid">
 
-    </p>
-    <h1>Message Per Minute</h1>
-    <p id="mpm_display">
-        
-    </p>
-    <h1>Kappa Count</h1>
-    <p id="kappa_count">
+      <div class="info-box">
+        <strong>Message Count</strong>
+        <p id="message_count">
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <strong>Message Per Second</strong>
+        <p id="mpm_display">
+        </p>
+      </div>
 
-    </p>
-    <h1>Kappa Message</h1>
-    <p id="kappa_msg">
+      <div class="info-box">    
+        <strong>Kappa Count</strong>
+        <p id="kappa_count"></p>
+      </div>
+      
+      <div class="info-box">
+        <strong>Kappa Message</strong>
+        <p id="kappa_msg">
+        </p>
+      </div>
 
-    </p>
-    <h1>Kappa Per Min</h1>
-    <p id="kpm_display">
 
-    </p>
-    <h1>Kappa Percentage</h1>
-    <p id="kappa_percent">
+      <div class="info-box">
+        <strong>Kappa Per Min</strong>
+        <p id="kpm_display">
+        </p>
+      </div>
 
-    </p>
+      <div class="info-box">
+        <strong>Kappa Percentage</strong>
+        <p id="kappa_percent">
+        </p>
+      </div>
+   </div>
   </body>
 </html>
